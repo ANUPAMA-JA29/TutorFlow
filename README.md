@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TutorFlow
 
-## Getting Started
+> AI-powered tutoring management platform for one-to-one online tutors.
 
-First, run the development server:
+TutorFlow is a full-stack web application designed for tutors who manage individual students and tutoring sessions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The platform allows tutors to:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Manage student profiles
+- Record learning goals, strengths, and weaknesses
+- Schedule tutoring sessions
+- Prevent tutor double-booking
+- Track sessions through a controlled four-state lifecycle
+- Start and complete sessions
+- Write session notes and homework
+- Generate personalized AI session plans
+- Generate AI-powered session reviews
+- Review student learning progress
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Students have a restricted dashboard where they can see only:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Their own upcoming sessions
+- Their past sessions
+- Session notes
+- Homework
+- AI-generated session reviews
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Live Application:**  
+https://tutorflow.vercel.app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**GitHub Repository:**  
+https://github.com/ANUPAMA-JA29/TutorFlow
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# ✨ Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 1. Role-Based Authentication
+
+TutorFlow supports two user roles:
+
+### Tutor
+
+Tutors can:
+
+- Log in securely
+- Add students
+- Maintain student profiles
+- Schedule sessions
+- View all their sessions
+- Start sessions
+- Add notes
+- Add homework
+- Complete sessions
+- Generate AI session plans
+- Trigger AI reviews
+
+### Student
+
+Students can:
+
+- Log in securely
+- View only their own profile
+- View upcoming sessions
+- View past sessions
+- Read session notes
+- Read homework
+- View AI-generated session reviews
+
+Unauthorized users cannot access protected application data.
+
+---
+
+# 👩‍🏫 Tutor Features
+
+## Student Management
+
+Tutors can create student profiles containing:
+
+- Name
+- Email
+- Age
+- Subject
+- Learning level
+- Learning goals
+- Strengths
+- Weaknesses
+
+This information is also used by the AI system to personalize session planning and review.
+
+Example student profile:
+
+```text
+Name: Rahul
+Subject: Mathematics
+Learning Level: Intermediate
+
+Learning Goals:
+Improve algebra and problem-solving skills.
+
+Strengths:
+Good understanding of basic arithmetic.
+
+Weaknesses:
+Struggles with algebraic equations and word problems.
